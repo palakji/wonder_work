@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Done | Get your work done</title>
+    <link rel="icon" href="./icons/logo.png">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="home.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("7JPlkoF3xDWkv7XjM");
+        })();
+    </script>
+</head>
+
+<body>
+    <section class="navbar">
+
+        <div class="logo">
+            <span id="sp1">Wonder</span>
+            <span id="sp2">works</span>
+
+        </div>
+
+
+        <div id="slidebar">
+            <div id="toggle" onclick="show()">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+            <ul class="ul">
+                <li> <a onclick="show()" href="#hm">Home</a></li>
+
+                <li> <a onclick="show()" href="#srv">Services</a></li>
+
+                <li> <a onclick="show()" href="#job">Jobs</a></li>
+
+                <li> <a href="">Contact Us</a></li>
+
+            </ul>
+        </div>
+
+
+
+
+    </section>
+
+    <section id="hm" class="home">
+        <img src="https://img.freepik.com/free-vector/home-service-website_1893-2154.jpg?w=900" alt="">
+
+        <div class="box">
+            <h1>Get your all work done with us. Hire professionals for every small and big task at your home and office.
+            </h1>
+
+            <button><a style="text-decoration: none;" href="./hire.html">Hire a Professionals</a></button>
+        </div>
+
+
+    </section>
+
+
+    <section id="srv" class="serv">
+        <h1>Our Services</h1>
+
+        <div class="icons">
+            <div class="box1">
+                <span><img src="./icons/carpenter.png" alt="1">Wood Worker</span>
+
+                <span>
+                    <img src="./icons/cleaner.png" alt="2"> Cleaner and Hyginist
+                </span>
+
+                <span><img src="./icons/const.png" alt="3">Builder and Mason</span>
+            </div>
+
+
+            <div class="box2">
+
+                <span><img src="./icons/cook.png" alt="">Cook and Maid </span>
+
+                <span><img src="./icons/driver.png" alt="">Driver and Mech</span>
+
+                <span><img src="./icons/elec.png" alt="">Electric Expert</span>
+
+
+            </div>
+            <div class="box3">
+                <span><img src="./icons/gaurd.png" alt=""> Watch-man and Gaurd
+                </span>
+
+                <span><img src="./icons/plumber.png" alt=""> Plumber and Pipe Fitter</span>
+                <span><img src="./icons/salon.png" alt="">Salon and Parlors</span>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    <section class="jobs" id="job">
+        <h1>Jobs</h1>
+
+        <div class="cont">
+            <img src="./icons/job.jpg" alt="">
+
+            <div class="box">
+                <h1>Skilled, but unemployed. Join Work Done community and be a certified Professional at your work, with beneficial perks and wages. Apply now for further details.
+
+                </h1>
+
+                <button>Apply Now</button>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    <section class="contact">
+        <h1>Contact Us</h1>
+
+        <div class="cont1">
+
+            <div class="form">
+
+                <div class="bb" id="name">
+
+                    <input type="text" class="txt" required id="nm">
+                    <label class="lab" for="">Name</label>
+                </div>
+
+                <div class="bb" id="mail">
+
+                    <input type="email" class="txt" required id="ml">
+                    <label class="lab" class="txt" for="">Mail</label>
+                </div>
+
+
+                <div class="bb" id="mess">
+                    <textarea required class="txt" id="ms"></textarea>
+                    <label class="lab" id="m" for="">Message</label>
+                </div>
+
+                <button onclick='sendMail()' type="submit">Send</button>
+                <h2 id="msg2">Message Sent!</h2>
+
+
+            </div>
+            <img src="./icons/Contact-Us-Vector-Illustration-Part-02-1.jpg" alt="">
+        </div>
+
+    </section>
+
+
+
+
+
+
+</body>
+
+</html>
